@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Project Banner](https://raw.githubusercontent.com/OSGpheonix/ainarchy/refs/heads/main/public/logo-ban.png)
+
+# Ainarchy
+
+Ainarchy is a cutting-edge project that leverages the power of Next.js to provide a seamless and efficient development experience. This project is designed to explore the boundaries of AI capabilities through a unique jailbreak feature.
+
+## Project Description
+
+Ainarchy is a Next.js application that demonstrates the potential of AI by implementing a jailbreak feature. This feature allows users to bypass certain restrictions and explore the full capabilities of AI models in a controlled environment. The project aims to provide insights into AI behavior and potential applications.
+
+## Jailbreak Functionality
+
+The core feature of Ainarchy is the jailbreak, which enables users to interact with AI models without the usual constraints. This functionality is designed to:
+
+- Allow unrestricted access to AI capabilities for research and development purposes.
+- Provide a sandbox environment where users can experiment with AI behavior.
+- Offer insights into the potential and limitations of AI models.
+
+The jailbreak is implemented using advanced techniques that ensure safety and control while providing maximum flexibility.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the development server, run the following command:
 
 ```bash
 npm run dev
@@ -28,9 +46,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
