@@ -2,11 +2,11 @@
 
 # Ainarchy
 
-Ainarchy is a cutting-edge project that leverages the power of Next.js to provide a seamless and efficient development experience. This project is designed to explore the boundaries of AI capabilities through a unique jailbreak feature.
+Ainarchy is a cutting-edge that pushes the boundaries of AI capabilities through a unique jailbreak feature.
 
 ## Project Description
 
-Ainarchy is a Next.js application that demonstrates the potential of AI by implementing a jailbreak feature. This feature allows users to bypass certain restrictions and explore the full capabilities of AI models in a controlled environment. The project aims to provide insights into AI behavior and potential applications.
+Ainarchy is unique application that demonstrates the potential of AI by implementing a jailbreak feature. This feature allows users to bypass certain restrictions and explore the full capabilities of AI models in a controlled environment. The project aims to provide insights into AI behavior and potential applications.
 
 ## Jailbreak Functionality
 
@@ -35,14 +35,3 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
