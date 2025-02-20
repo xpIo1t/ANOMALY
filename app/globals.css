@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core Black and Red Theme */
+  --primary-red: #ff0000;  /* primary accent */
+  --primary-black: #000000;
+  
+  /* Adjusted colors for black and red theme */
+  --dark-bg: var(--primary-black);
+  --darker-bg: #050505;
+  --terminal-green: #ff0000; /* Changed to red for consistency */
+  --graffiti-red: var(--primary-red);
+  --graffiti-dark: #0a0a0a; /* Dark panel background */
+  --spray-texture: rgba(255, 0, 0, 0.05); /* Red spray texture */
+}
+
+/* New class for red text outlines */
+.red-outline {
+  text-shadow: 1px 1px 2px black;
+}
+
+/* New animated gradient overlay */
+.animated-gradient {
+  background: linear-gradient(45deg, var(--neon-pink), var(--neon-red), var(--neon-green), var(--uv-neon-yellow), var(--uv-neon-cyan));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+}
+
+/* New keyframes for animated gradient */
+@keyframes gradientBackground {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Added neon pulse keyframes for buttons */
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 5px var(--graffiti-red); }
+  100% { box-shadow: 0 0 20px var(--graffiti-red); }
+}
+
+/* New utility class for neon shadows */
+.shadow-neon {
+  box-shadow: 0 0 10px var(--graffiti-red), 0 0 20px var(--graffiti-red);
+}
+
+/* Apply a glowing text effect to the ASCII logo */
+.ascii-logo {
+  text-shadow: 2px 2px 6px var(--uv-neon-magenta);
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--dark-bg)] text-[var(--terminal-green)] font-mono;
+    font-family: 'Share Tech Mono', monospace;
+    /* Optionally add fadeIn animation to body */
+    animation: fadeIn 1s ease-out forwards;
+  }
+}
+
+/* New keyframes for fadeIn effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Updated text glow: mix UV neon hues */
+.text-glow {
+  text-shadow: 
+    0 0 10px var(--uv-neon-magenta),
+    0 0 20px var(--uv-neon-yellow),
+    0 0 30px var(--neon-red),
+    0 0 40px var(--neon-green);
+}
+
+/* Redesigned socials bar (moved below the banner) */
+.socials-footer {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-red);
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--primary-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chat container with an animated gradient overlay and SVG pattern */
+.chat-container {
+  position: relative;
+  background: var(--primary-black);
+  background-blend-mode: normal;
+  /* background-image: url('/banner.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; /* Slightly visible */
+  border: 1px solid var(--primary-red);
+  box-shadow: 0 0 10px var(--primary-red);
+  overflow-y: auto;
+}
+
+/* Scrollable messages area inside the chat container */
+.chat-messages {
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  padding-bottom: 80px;
+}
+
+.chat-bubble {
+  background-color: #1a1a1a; /* Darker background */
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* HUD overlay inside chat container for input */
+.hud-container {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 0.75rem 1rem;
+}
+
+/* Lights-on animation for page load */
+@keyframes lightsOn {
+  0% {
+    filter: brightness(0) contrast(0.5) saturate(0);
+  }
+  20% {
+    filter: brightness(0.3) contrast(0.8) saturate(1);
+  }
+  40% {
+    filter: brightness(0.6) contrast(1) saturate(1.2);
+  }
+  60% {
+    filter: brightness(1.1) contrast(1.1) saturate(1.3);
+  }
+  80% {
+    filter: brightness(0.9) contrast(1) saturate(1.2);
+  }
+  100% {
+    filter: brightness(1) contrast(1) saturate(1);
+  }
+}
+
+.lights-animation {
+  animation: lightsOn 2.5s ease-out forwards;
+}
+
+/* Restyle input field with a focus neon glow */
+.console-input {
+  background: #111;
+  border: 2px solid var(--graffiti-red);
+  color: #fff;
+  text-shadow: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.console-input::placeholder {
+  color: #666;
+  text-shadow: none;
+}
+
+.console-input:focus {
+  box-shadow: 0 0 8px var(--graffiti-red);
+}
+
+/* Restyle submit button with neon pulse */
+.console-button {
+  background: var(--graffiti-red);
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  animation: neonPulse 1.5s infinite alternate;
+}
+
+.console-button:hover {
+  opacity: 0.9;
+}
+
+/* ---------- The rest of your existing globals.css remains unchanged ---------- */
+
+/* Remove the flicker animation from the CRT effect */
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  /* animation: flicker 0.15s infinite; */ /* Commented out */
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  /* animation: flicker 0.15s infinite; */ /* Commented out */
+}
+
+/* Remove the flicker keyframes */
+@keyframes flicker {
+  /* Removed the keyframes */
+}
+
+.neon-border {
+  position: relative;
+  border: 2px solid var(--graffiti-red);
+  box-shadow: 0 0 15px var(--graffiti-red),
+              inset 0 0 15px var(--graffiti-red);
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at top left, var(--spray-texture) 0%, transparent 70%),
+    radial-gradient(circle at bottom right, var(--spray-texture) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.typing-indicator::after {
+  content: '▋';
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.glitch {
+  position: relative;
+  color: var(--graffiti-red);
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff8f8f;
+  animation: glitch-1 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: 2px 0 #590000;
+  animation: glitch-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-1 {
+  0% { clip-path: inset(20% 0 30% 0); }
+  20% { clip-path: inset(60% 0 10% 0); }
+  40% { clip-path: inset(40% 0 50% 0); }
+  60% { clip-path: inset(80% 0 5% 0); }
+  80% { clip-path: inset(10% 0 70% 0); }
+  100% { clip-path: inset(30% 0 20% 0); }
+}
+
+@keyframes glitch-2 {
+  0% { clip-path: inset(15% 0 35% 0); }
+  20% { clip-path: inset(55% 0 15% 0); }
+  40% { clip-path: inset(45% 0 45% 0); }
+  60% { clip-path: inset(75% 0 10% 0); }
+  80% { clip-path: inset(15% 0 65% 0); }
+  100% { clip-path: inset(25% 0 25% 0); }
+}
+
+pre {
+  margin: 0;
+}
+
+.copy-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--graffiti-red);
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.copy-tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
