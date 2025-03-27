@@ -1,5 +1,9 @@
 ![Project Banner](https://raw.githubusercontent.com/OSGpheonix/ainarchy/refs/heads/main/public/logo-ban.png)
 
+# CONTRACT ADDRESS
+
+DUvEZmygGz3L1FdPPPYZYN4wKV2wm5nN7LKg6ckspump
+
 # Ainarchy
 
 Ainarchy is a cutting-edge that pushes the boundaries of AI capabilities through a unique jailbreak feature.
