@@ -1,4 +1,6 @@
-![Project Banner](https://raw.githubusercontent.com/xpIo1t/ANOMALY/refs/heads/main/public/image.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xpIo1t/ANOMALY/refs/heads/main/public/image.png" />
+</p>
 
 # CONTRACT ADDRESS
 
