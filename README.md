@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="width:300px;height:300px" src="https://raw.githubusercontent.com/xpIo1t/ANOMALY/refs/heads/main/public/image.png" />
+  <img style="width:300px;height:300px" src="https://raw.githubusercontent.com/xpIo1t/ANOMALY/refs/heads/main/public/raw.png" />
 </p>
 
 # CONTRACT ADDRESS
