@@ -1,4 +1,4 @@
-![Project Banner](https://raw.githubusercontent.com/OSGpheonix/ANOMALY/refs/heads/main/public/logo-ban.png)
+![Project Banner](https://raw.githubusercontent.com/xpIo1t/ANOMALY/refs/heads/main/public/image.png)
 
 # CONTRACT ADDRESS
 
