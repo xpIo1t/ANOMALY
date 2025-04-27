@@ -4,7 +4,7 @@
 
 # CONTRACT ADDRESS
 
-COMING SOON
+Dw78pmTTebr4xypn3wyhLMQ7MEVccK4geKsAxMrapump
 
 # ANOMALY
 
