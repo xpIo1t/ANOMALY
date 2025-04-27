@@ -8,7 +8,8 @@ COMING SOON
 
 # ANOMALY
 
-ANOMALY is a cutting-edge that pushes the boundaries of AI capabilities through a unique jailbreak feature.
+ANOMALY is a cutting-edge that pushes the boundaries of AI capabilities through a unique jailbreak feature.<br/>
+[TWITTER/X](https://x.com/anomalyai_)
 
 ## Project Description
 
